@@ -1,0 +1,16 @@
+
+console.log('util is working')
+
+
+export function getUserData(){
+    return JSON.parse(sessionStorage.getItem('userData'))
+}
+
+export function setUserData(data){
+    sessionStorage.setItem(JSON.stringify(data));
+
+}
+
+export function clearUserData(){
+    sessionStorage.removeItem('userData')
+}
